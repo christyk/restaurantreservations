@@ -36,3 +36,169 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  max-width: 900px;
+  min-height: 50vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  grid-column: span 6;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  justify-content:space-between;
+}
+
+.hero {
+  grid-column: span 6;
+  background-color: peachpuff;
+}
+
+.order {
+  grid-column: span 6;
+  background-color: peachpuff;
+}
+
+.testimonials {
+  grid-column: span 6;
+  background-color: peachpuff;
+}
+
+.about {
+  grid-column: span 6;
+  background-color: peachpuff;
+}
+
+.footer {
+  display: flex;
+  grid-column: span 6;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 600px) {
+  .hero {
+    grid-column: span 3;
+  }
+  
+  .specials {
+    grid-column: span 3;
+  }
+  
+  .testimonials {
+    grid-column: span 3;
+  }
+  
+  .about {
+    grid-column: span 3;
+  }
+}
+
+.headerNav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.footerNav {
+  list-style: none;
+  font-size: small;
+}
+
+a {
+  text-align: center;
+  font-family: "Karla";
+  font-size: small;
+}
+.headerNav a:link, .footerNav a:link, .headerNav a:visited, .footerNav a:visited {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.headerNav a:hover, .footerNav a:hover, .headerNav a:active, .footerNav a:active {
+  color: darkgray;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/*Display Title*/
+h1 {
+  font-family: "Markazi Text";
+  font-size: 64pt;
+  font-weight: 500;
+}
+
+/*Sub title - keep close to display*/
+h2 {
+  font-family: "Markazi Text";
+  font-size: 40pt;
+  font-weight: 400;
+}
+
+/*SECTION TITLE*/
+h3 {
+  font-family: "Karla";
+  font-size: 20pt;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/*Lead text! Use this for descriptive items to catch attention! e.g. home page or CTA(call to attention)*/
+h4 {
+  font-family: "Karla";
+  font-size: 18pt;
+  font-weight: 500;
+}
+
+/*Card Title*/
+h5 {
+  font-family: "Karla";
+  font-size: 18pt;
+  font-weight: 700;
+}
+
+/*This Weeks Specials! Section Categories*/
+h6 {
+  font-family: "Karla";
+  font-size: 16pt;
+  font-weight: 900;
+}
+
+p {
+  font-family: "Karla";
+  font-size: 16pt;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 65ch;
+}
+
+span {}
+
+nav {}
+
+ul {}
+
+li {}
+
+img {
+  border: 0px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 100%;
+  opacity: 1;
+  filter: none;
+}

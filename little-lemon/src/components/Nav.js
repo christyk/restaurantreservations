@@ -1,16 +1,14 @@
-import { HStack } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <nav>
-            <HStack spacing={8}>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/menu">Menu</a>
-                <a href="/reservations">Reservations</a>
-                <a href="/order">Order Online</a>
-                <a href="/login">Login</a>
-            </HStack>
+        <nav className="headerNav">
+            <Link to="/" className="nav-item">Home</Link>
+            <Link to="/about" className="nav-item">About</Link>
+            <Link to="/menu" className="nav-item">Menu</Link>
+            <Link to="/booking" className="nav-item">Reservations</Link>
+            <Link to="/order" className="nav-item">Order Online</Link>
+            <Link to="/login" className="nav-item">Login</Link>
         </nav>
     );
 };
